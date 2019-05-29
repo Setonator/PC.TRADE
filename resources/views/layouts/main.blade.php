@@ -14,13 +14,19 @@
     <script src="semantic/dist/semantic.min.js"></script>
 </head>
 <body>
-    <nav>
-        @section('nav')
-            
-        @show
+    <nav class="ui large top fixed hidden menu">
+        <div class="ui container">
+            @section('nav')
+                <a href="" class="item">Home</a>
+                <a href="" class="item">For Sale</a>
+                <a href="" class="item">Looking For</a>
+                <a href="" class="item">Shops</a>
+                <a href="" class="item">Login</a>
+            @show
+        </div>
     </nav>
 
-    <div class="container">
+    <div class="ui container">
         @yield('content')
     </div>
 
