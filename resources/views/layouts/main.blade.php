@@ -7,6 +7,18 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    
+    <nav>
+        @section('nav')
+            
+        @show
+    </nav>
+
+    <div class="container">
+        @yield('content')
+    </div>
+
+    <div class="footer">
+        
+    </div>
 </body>
 </html>
