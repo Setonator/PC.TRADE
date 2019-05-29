@@ -4,8 +4,6 @@
 
 @section('nav')
     @parent
-
-    Home Text
 @endsection
 
 @section('content')
