@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="ui large top fixed hidden menu">
+    {{-- <nav class="ui large top fixed hidden menu"> --}}
         <div class="ui attached stackable menu">
             @section('nav')
                 <div class="ui container">
@@ -25,10 +25,10 @@
                     <a class="item">
                     <i class="grid layout icon"></i> Browse
                     </a>
-                    <a class="item">
+                    {{-- <a class="item">
                     <i class="mail icon"></i> Messages
-                    </a>
-                    <div class="ui simple dropdown item">
+                    </a> --}}
+                    {{-- <div class="ui simple dropdown item">
                     More
                     <i class="dropdown icon"></i>
                     <div class="menu">
@@ -36,14 +36,16 @@
                         <a class="item"><i class="globe icon"></i> Choose Language</a>
                         <a class="item"><i class="settings icon"></i> Account Settings</a>
                     </div>
-                    </div>
+                    </div> --}}
                     <div class="right item">
                     <div class="ui input"><input type="text" placeholder="Search..."></div>
                     </div>
+                    <a href="" class="item">Login</a>
+                    <a href="" class="item">Sign Up</a>
                 </div>
             @show
         </div>
-    </nav>
+    {{-- </nav> --}}
 
     <div class="ui container">
         @yield('content')
